@@ -1,6 +1,6 @@
 {
   "name": "react-native-dynamic-style-processor",
-  "version": "0.10.0",
+  "version": "0.10.1",
   "description": "React Native dynamic style processor combines multiple runtime style transformations together.",
   "main": "dist/index.js",
   "bugs": {
