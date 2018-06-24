@@ -38,7 +38,7 @@
     "test": "echo yup"
   },
   "dependencies": {
-    "css-viewport-units-transform": "^0.10.1",
+    "css-viewport-units-transform": "^0.10.2",
     "micro-memoize": "^2.0.3",
     "react-native-css-media-query-processor": "^0.14.0"
   },
