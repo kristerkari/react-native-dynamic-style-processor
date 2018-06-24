@@ -63,11 +63,6 @@
       "git add"
     ]
   },
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
   "prettier": {
     "semi": true,
     "singleQuote": false,
