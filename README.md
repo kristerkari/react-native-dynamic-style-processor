@@ -1,5 +1,6 @@
 # react-native-dynamic-style-processor
 
+![Platform - Android and iOS](https://img.shields.io/badge/platform-Android%20%7C%20iOS-blue.svg)
 [![Build Status](https://travis-ci.org/kristerkari/react-native-dynamic-style-processor.svg?branch=master)](https://travis-ci.org/kristerkari/react-native-dynamic-style-processor)
 [![Build status](https://ci.appveyor.com/api/projects/status/ustkl1ujo5xr3i24/branch/master?svg=true)](https://ci.appveyor.com/project/kristerkari/react-native-dynamic-style-processor/branch/master)
 ![Size](https://img.shields.io/bundlephobia/minzip/react-native-dynamic-style-processor.svg)
