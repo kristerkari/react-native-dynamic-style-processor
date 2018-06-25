@@ -9,3 +9,8 @@
 React Native dynamic style processor combines multiple runtime style transformations together.
 
 Currently it processes/transforms CSS media queries and CSS viewport units.
+
+**Main dependencies for runtime transformations:**
+
+- [react-native-css-media-query-processor](https://github.com/kristerkari/react-native-css-media-query-processor)
+- [css-viewport-units-transform](https://github.com/kristerkari/css-viewport-units-transform)
