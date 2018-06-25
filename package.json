@@ -30,6 +30,7 @@
     "transform"
   ],
   "scripts": {
+    "size": "npm run build && size-limit",
     "prepublish": "npm run build",
     "prebuild": "rimraf dist",
     "build": "babel src --out-dir dist --ignore src/__tests__,src/__mocks__",
@@ -52,7 +53,8 @@
     "lint-staged": "^7.1.3",
     "npmpub": "^3.1.0",
     "prettier": "^1.13.4",
-    "rimraf": "^2.6.2"
+    "rimraf": "^2.6.2",
+    "size-limit": "^0.18.3"
   },
   "peerDependencies": {
     "react-native": ">=0.45.0"
@@ -68,6 +70,12 @@
     "singleQuote": false,
     "trailingComma": "none"
   },
+  "size-limit": [
+    {
+      "limit": "3 KB",
+      "path": "dist/index.js"
+    }
+  ],
   "jest": {
     "collectCoverageFrom": [
       "src/*.js"
