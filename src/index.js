@@ -23,9 +23,21 @@ function viewportUnitsTransform(obj, matchObject) {
   return transform(omitMemoized(obj, "__viewportUnits"), matchObject);
 }
 
+function mediaQueriesTransform(obj, matchObject) {
+  const hasParsedMQs = "__mediaQueries" in obj;
+
+  if (!hasParsedMQs) {
+    return obj;
+  }
+  return omitMemoized(mediaQueriesProcess(obj, matchObject), "__mediaQueries");
+}
+
 export function process(obj) {
   const matchObject = getMatchObject();
-  return viewportUnitsTransform(mediaQueriesProcess(obj), matchObject);
+  return viewportUnitsTransform(
+    mediaQueriesTransform(obj, matchObject),
+    matchObject
+  );
 }
 
 function getMatchObject() {

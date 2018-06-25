@@ -41,7 +41,7 @@
   "dependencies": {
     "css-viewport-units-transform": "^0.10.2",
     "micro-memoize": "^2.0.3",
-    "react-native-css-media-query-processor": "^0.14.1"
+    "react-native-css-media-query-processor": "^0.20.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
