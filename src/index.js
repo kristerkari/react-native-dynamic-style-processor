@@ -29,7 +29,7 @@ function mediaQueriesTransform(obj, matchObject) {
   if (!hasParsedMQs) {
     return obj;
   }
-  return omitMemoized(mediaQueriesProcess(obj, matchObject), "__mediaQueries");
+  return mediaQueriesProcess(obj, matchObject);
 }
 
 export function process(obj) {
