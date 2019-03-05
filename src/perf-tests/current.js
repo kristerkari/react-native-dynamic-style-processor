@@ -1,6 +1,5 @@
 import { transform } from "css-viewport-units-transform";
 import memoize from "micro-memoize";
-import { Dimensions } from "react-native";
 import { process as mediaQueriesProcess } from "react-native-css-media-query-processor";
 
 function omit(obj, omitKey) {
@@ -32,21 +31,9 @@ function mediaQueriesTransform(obj, matchObject) {
   return mediaQueriesProcess(obj, matchObject);
 }
 
-export function process(obj) {
-  const matchObject = getMatchObject();
+export function process(obj, matchObject) {
   return viewportUnitsTransform(
     mediaQueriesTransform(obj, matchObject),
     matchObject
   );
-}
-
-function getMatchObject() {
-  const win = Dimensions.get("window");
-  return {
-    width: win.width,
-    height: win.height,
-    orientation: win.width > win.height ? "landscape" : "portrait",
-    "aspect-ratio": win.width / win.height,
-    type: "screen"
-  };
 }
